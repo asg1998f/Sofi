@@ -1,0 +1,17 @@
+.div1 {
+    background-color: #e0f7fa; // Azul claro
+    border: 3px solid #0288d1; // Azul más oscuro
+    border-radius: 15px; // Esquinas redondeadas
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-family: 'Poppins', sans-serif; // Fuente más bonita
+      font-size: 18px;
+      color: #01579b; // Azul oscuro
+      text-align: center;
+      line-height: 1.6;
+    }
+  }
