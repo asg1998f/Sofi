@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.container-catalina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+  padding: 20px;
+  background: linear-gradient(90deg, #ff6b6b, #f7a5b5); /* Colores vibrantes de fondo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  position: relative;
+}
+
+.texto-catalina {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px; /* Asegura que el texto no se haga demasiado ancho */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.texto-catalina::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://your-image-url.com/path-to-background-image.jpg'); /* Imagen de fondo si se desea */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.texto-catalina p {
+  font-size: 18px;
+  color: #fefefe;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #ffcc00; /* Color de texto que resalta */
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+  }
+}
+
+/* Efecto de sombra en el contenedor */
+.container-catalina:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}

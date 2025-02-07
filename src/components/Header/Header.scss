@@ -1,55 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap');
 
 .header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #1e3c72, #2a5298);
-  padding: 15px 30px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  justify-content: center;
+  background: linear-gradient(45deg, #ff4081, #7c4dff, #00bcd4, #ffeb3b);
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .logo-image {
-  width: 100px;
+  width: 120px;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.logo-image:hover {
+  transform: rotate(15deg);
+  filter: brightness(1.3);
 }
 
 .title {
-  font-family: 'Nunito', sans-serif;
-  font-size: 56px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 72px;
   color: white;
-  margin: 0 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  margin: 10px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: bounce 1.2s infinite alternate;
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  margin: 0 12px;
-  transition: color 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease-in-out;
 
   &:hover {
-    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffeb3b;
+    transform: scale(1.1);
     text-shadow: 0px 0px 8px rgba(255, 204, 0, 0.8);
   }
 }
 
-.logo-width {
-    width: 30px;
+.container-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
 }
 
-.container-logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.logo-width {
+  width: 50px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
+
+.logo-victor {
+  width: 70px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.logo-jose {
+  width: 40px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.logo-xavi {
+  width: 65px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.logo-alberto {
+  width: 60px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.logo-width:hover {
+  transform: scale(1.3);
+  filter: brightness(1.3);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.container-luis {
+  background: linear-gradient(135deg, #1b5e20, #4caf50, #a5d6a7); // Gradiente de verdes
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 100, 0, 0.4);
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  border-left: 5px solid #c8e6c9; // Toque de contraste en verde claro
+  animation: fadeIn 1s ease-in-out;
+}
+
+.texto-luis {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #f1f8e9; // Verde muy claro casi blanco
+  text-shadow: 1px 1px 6px rgba(0, 255, 0, 0.4);
+  line-height: 1.7;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); // Efecto semi-transparente fresco
+  border-radius: 8px;
+  letter-spacing: 0.8px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
