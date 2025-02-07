@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Nunito:wght@400;700&display=swap');
+
+.container-alberto {
+  background: linear-gradient(135deg, #ffffff, #87CEEB); // Blanco y azul celeste
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #1D5DA7; // Azul fuerte de la bandera gallega
+}
+
+.texto-alberto {
+  font-family: 'Nunito', sans-serif; // Legible y moderna con un toque elegante
+  font-size: 22px;
+  color: #1D5DA7; // Azul fuerte para resaltar
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  letter-spacing: 1px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6); // Fondo blanco semitransparente para mejor contraste
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
